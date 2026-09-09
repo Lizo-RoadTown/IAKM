@@ -7,8 +7,9 @@ Elizabeth Osborn, 2026
 
 I will not assert any patent right I hold or may come to hold against any
 person or organization for implementing, practicing, teaching, adapting, or
-commercializing the IAKM methodology as described in this repository and in
-the accompanying paper.
+commercializing the IAKM methodology, or any system implementing it, as
+described in this repository and in the papers it contains — both the
+methodology paper and the implementation design case.
 
 This pledge is irrevocable and extends to all users, for any purpose,
 including commercial purposes, with no requirement of permission, notice,

@@ -14,6 +14,17 @@ verified record that *locates* knowledge-relevant metadata against the structure
 the system: who appears to know what, which component it concerns, what evidence
 supports the claim, and where the knowledge may still be recoverable.
 
+This repository holds **two papers**: the methodology, and its first
+implementation.
+
+| Paper | What it is |
+|---|---|
+| **[Interface-Anchored Knowledge Mapping](paper_v7/IAKM_Public.pdf)** | The methodology. The recovery record, the five-element coordinate system, the verification procedure, and the standards required for collections to accumulate. |
+| **[Observing Knowledge at Structural Interfaces](implementation/Observing_Knowledge_at_Structural_Interfaces.pdf)** | The first implementation. A design case for automated knowledge-capture support built inside a multi-university CubeSat software program: automated extraction, staged review, observability, and a live knowledge graph. |
+
+The methodology paper states what the record must be. The implementation paper
+reports what happened when it was built.
+
 ## The five-element address
 
 Every IAKM record is addressed by five elements. Two addresses are identical only
@@ -37,20 +48,28 @@ canonical ordering across systems.
 ## Repository contents
 
 ```
-paper_v7/
-  IAKM_PAPER_V7_DRAFT.md        Prose source of the paper
-  IAKM_PAPER_V7_IEEE.tex        Typeset source of record (hand-maintained)
+paper_v7/                       METHODOLOGY PAPER
   IAKM_Public.pdf               Built paper — start here
+  IAKM_PAPER_V7_DRAFT.md        Prose source
+  IAKM_PAPER_V7_IEEE.tex        Typeset source of record (hand-maintained)
   IAKM_V7_FLOAT_PLACEMENT.md    Float/caption spec the .tex is tuned against
   IAKM_V7_REFERENCES.md         Reference list
   IAKM_CITATION_DIGGING_LIST.md Citation provenance notes
   fig1..fig5_*.pdf              Print-ready figures
+
+implementation/                 IMPLEMENTATION PAPER
+  Observing_Knowledge_at_       Design case, May 2026 (PDF only;
+    Structural_Interfaces.pdf   no LaTeX source in this repository)
+
 scripts/                        Build tooling (see scripts/README.md)
 ```
 
-**To read the paper:** open [`paper_v7/IAKM_Public.pdf`](paper_v7/IAKM_Public.pdf).
+**Start here:** [`paper_v7/IAKM_Public.pdf`](paper_v7/IAKM_Public.pdf) for the
+methodology, then
+[`implementation/`](implementation/Observing_Knowledge_at_Structural_Interfaces.pdf)
+for what building it looked like.
 
-## Building the paper
+## Building the methodology paper
 
 Requires a LaTeX installation providing the `IEEEtran` class — MiKTeX on Windows,
 or TeX Live (`texlive-publishers` on Debian/Ubuntu, MacTeX on macOS).
@@ -65,6 +84,9 @@ scripts\build_paper_v7.bat
 
 Both compile `paper_v7/IAKM_PAPER_V7_IEEE.tex` in two passes and write
 `paper_v7/IAKM_Public.pdf`.
+
+The implementation paper is distributed as a PDF only; there is no LaTeX source
+for it in this repository, so it is not rebuildable here.
 
 > **Note for contributors:** the `.tex` is the hand-maintained source of record for
 > the PDF, tuned against `IAKM_V7_FLOAT_PLACEMENT.md` (float environments, caption
@@ -96,7 +118,7 @@ no single author can settle alone.
 
 ## Citing
 
-A DOI will be minted on public release; this section will carry it.
+DOIs will be minted on public release; this section will carry them.
 
 ```bibtex
 @misc{osborn2026iakm,
@@ -105,6 +127,15 @@ A DOI will be minted on public release; this section will carry it.
             Locating Knowledge-Relevant Metadata in Modular Sociotechnical
             Systems},
   year   = {2026},
+  note   = {DOI pending}
+}
+
+@misc{osborn2026observing,
+  author = {Osborn, Elizabeth},
+  title  = {Observing Knowledge at Structural Interfaces: An Iterative Design
+            Case for Automated Knowledge-Capture Support},
+  year   = {2026},
+  month  = {5},
   note   = {DOI pending}
 }
 ```
