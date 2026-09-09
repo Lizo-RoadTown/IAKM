@@ -8,9 +8,15 @@ version in [`../paper_v7/`](../paper_v7/).** Only the container differs: the
 IEEE two-column layout becomes MDPI's single-column preprint layout, and the
 front and back matter use MDPI's required commands.
 
-Because the two `.tex` files share their content but not their markup, **a
-change to the paper has to be made in both.** There is no generator that keeps
-them in sync.
+`IAKM_Preprints.tex` is **generated** from the IEEE `.tex`, which is the single
+source of prose, tables, and references:
+
+```sh
+python scripts/generate_preprint_tex.py
+```
+
+Edit `../paper_v7/IAKM_PAPER_V7_IEEE.tex` and rerun that script. **Do not
+hand-edit `IAKM_Preprints.tex`** — regenerating overwrites it.
 
 ## Building
 
@@ -85,7 +91,7 @@ Checked against the Preprints.org author guidance.
 | Funding statement | Yes — no external funding |
 | Institutional review statement | Yes — Not applicable, with rationale |
 | Informed consent statement | Yes — Not applicable |
-| Data availability statement | Yes — repository link, with the records themselves withheld |
+| Data availability statement | Yes — Zenodo DOI and repository link, with the records themselves withheld |
 | Conflicts of interest | Yes — none declared |
 | Graphical abstract | Yes — `graphical_abstract.png`, 1775x1019 px RGB |
 | LaTeX submitted as a complete archive | `scripts/package_preprint.*`, clean-room verified |
@@ -110,10 +116,10 @@ that and need no further action:
 
 ### Before you submit
 
-The data availability statement links to
-`https://github.com/Lizo-RoadTown/IAKM`. **That repository is currently
-private.** Make it public before or at submission, or reviewers and readers
-following the link will get a 404.
+The repository is public and the data availability links resolve:
+
+- `https://doi.org/10.5281/zenodo.22668058` — archived deposit, Version 1.00
+- `https://github.com/Lizo-RoadTown/IAKM` — live repository
 
 ### Still needed from the author
 

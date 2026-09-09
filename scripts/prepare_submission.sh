@@ -40,14 +40,23 @@ cp preprint/IAKM_Preprints.pdf              "$OUT/1_manuscript.pdf"
 cp preprint/IAKM_Preprints_submission.zip   "$OUT/2_latex_source.zip"
 cp preprint/graphical_abstract.png          "$OUT/3_graphical_abstract.png"
 
-cat > "$OUT/README.txt" <<'TXT'
+# Derive the page count so this README can never drift from the manuscript.
+PAGES="unknown"
+if command -v pdfinfo >/dev/null 2>&1; then
+    PAGES=$(pdfinfo "$OUT/1_manuscript.pdf" 2>/dev/null | awk '/^Pages/{print $2}')
+elif [ -n "${LOCALAPPDATA:-}" ] && [ -x "$LOCALAPPDATA/Programs/MiKTeX/miktex/bin/x64/pdfinfo.exe" ]; then
+    PAGES=$("$LOCALAPPDATA/Programs/MiKTeX/miktex/bin/x64/pdfinfo.exe" "$OUT/1_manuscript.pdf" 2>/dev/null | awk '/^Pages/{print $2}')
+fi
+[ -z "$PAGES" ] && PAGES="unknown"
+
+cat > "$OUT/README.txt" <<TXT
 PREPRINTS.ORG SUBMISSION
 Interface-Anchored Knowledge Mapping - Elizabeth Osborn
 
 Upload these three files. The numbers are the order the form asks for them.
 
   1_manuscript.pdf
-      The compiled manuscript. 15 pages.
+      The compiled manuscript. ${PAGES} pages.
       Upload as the main manuscript file.
 
   2_latex_source.zip
@@ -57,7 +66,7 @@ Upload these three files. The numbers are the order the form asks for them.
       to recreate the PDF. There is no .bib file; the bibliography is inline
       in the .tex.
       Verified by extracting into an empty directory and compiling from
-      scratch: 15 pages, no errors, no missing files.
+      scratch: ${PAGES} pages, no errors, no missing files.
 
   3_graphical_abstract.png
       1775 x 1019 px, RGB.
@@ -77,11 +86,16 @@ FORM DETAILS YOU WILL BE ASKED FOR
   Abstract     In the manuscript, 207 words
   Keywords     10, semicolon separated, in the manuscript
 
-BEFORE YOU SUBMIT
+ARCHIVED RECORD
 
-  The data availability statement links to
-  https://github.com/Lizo-RoadTown/IAKM
-  Make that repository public first, or the link will 404 for reviewers.
+  This work is deposited on Zenodo under CC BY 4.0. The data availability
+  statement in the manuscript cites both:
+
+    Version 1.00   https://doi.org/10.5281/zenodo.22668058
+    All versions   https://doi.org/10.5281/zenodo.22668057
+    Repository     https://github.com/Lizo-RoadTown/IAKM   (public)
+
+  Cite the version DOI in a paper; use the concept DOI for a general link.
 
 TO REGENERATE THIS FOLDER
 

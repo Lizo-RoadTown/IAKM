@@ -57,15 +57,13 @@ A mapping system for knowledge loss requires the system to be decomposed before 
 
 The decomposition comes from a structural model of the sociotechnical system rather than from the knowledge record itself. That role can be filled by nearly decomposable architecture, which treats the system as a molecular structure: bond strengths between elements differ by orders of magnitude, so modules are defined by relatively tighter internal bonds and looser relations across boundaries [1]. Couplings are the relations between parts, typically stronger inside a module than across its boundary. Interfaces occur where parts connect, within modules as well as across module boundaries. Sustaining mechanisms are the formal or informal structures that keep an interface working, such as a role, tool, protocol, or shared repository. The first three of these units, module, coupling, and interface, are inherited from systems and modularity literature. A sustaining mechanism field is added because a sociotechnical interface is not fully described by the fact that a connection exists; the record also needs to state what, if anything, keeps that connection usable.
 
-Preemptive decomposition matters because it gives the later map places to look. Once components and interfaces are identifiable, knowledge-relevant metadata can be sought at the relations where people, artifacts, tools, practices, and system parts meet. At the present collection stage, interface characterization guides search by suggesting what kinds of evidence may be recoverable. It remains a heuristic rather than a proof rule until repeated collections show whether those interface characteristics correspond reliably to recoverable metadata.
-
-Preemptive decomposition identifies candidate structural locations; the record-producing procedure in Section 6 depends on those locations before an address can be anchored.
+Once components and interfaces are identifiable, knowledge-relevant metadata can be sought at the relations where people, artifacts, tools, practices, and system parts meet. At the present collection stage, interface characterization guides search by suggesting what kinds of evidence may be recoverable. It remains a heuristic rather than a proof rule until repeated collections show whether those interface characteristics correspond reliably to recoverable metadata.
 
 ---
 
 ## 4. Digital Interfaces as the AI Seam
 
-The new observational opening is digital. Modern technical work produces repositories, issues, reviews, documents, logs, chats, meeting records, workflow traces, and other artifacts as part of ordinary activity. These records do not preserve knowledge completely, but they often preserve metadata about where knowledge was used, who was involved, what component was affected, what decision or failure prompted action, and where recovery may still be possible.
+Modern technical work produces repositories, issues, reviews, documents, logs, chats, meeting records, workflow traces, and other artifacts as part of ordinary activity. These records do not preserve knowledge completely, but they often preserve metadata about where knowledge was used, who was involved, what component was affected, what decision or failure prompted action, and where recovery may still be possible.
 
 Artificial intelligence changes the scale and timing of that observation. Earlier methods either observe knowledge-rich activity while it is happening but only locally, or preserve records at scale after the work has settled. AI-assisted analysis can examine large bodies of ordinary work artifacts while the work is still unfolding. That allows candidate interface relations to be identified before the people and traces that make verification possible have disappeared.
 
@@ -99,7 +97,7 @@ Three senses of location run together in ordinary speech, and the methodology ke
 
 The technician who knows by feel when a connector has seated is the case that makes the separation necessary. The content of what that person knows is not in the digital record and may never be. The relation is addressed because the component, knower, field, domain, and interface layer can be named. The capture point may be thin: perhaps a maintenance note, a repeated repair pattern, or a test anomaly. The carrier is recorded as the person, and the record therefore states that a specific component depends on knowledge held in one body and nowhere else. That is a structural condition the record can state, produced without capturing the knowledge itself.
 
-A digital map requires stable addresses. The coordinate system supplies them for verified records. IAKM anchors the record to the relation between a knower and a component, rather than to the record itself or to only one end of the relation.
+IAKM anchors the record to the relation between a knower and a component, rather than to the record itself or to only one end of the relation.
 
 The smallest addressable unit is one interface layer, under one declared field and domain, between one component and one knower:
 
@@ -213,8 +211,6 @@ Four implementation failures during use produced requirements for future impleme
 
 These are implementation requirements, not additional methodology rules.
 
-The partial deployment is enough to show that verified records can be produced, but not enough to establish every use available to a mature map. The next section separates those uses from the evidence needed to validate them.
-
 ---
 
 ## 8. Uses of Verified Map Records
@@ -236,7 +232,7 @@ The gradient is a layer profile rather than a single score. That distinction mat
 
 ## 9. Current-Stage Evaluation
 
-Uses of the map and validation of those uses are separate questions. Verified records make query, comparison, layer profiles, and later repeated collection possible, but they do not by themselves establish that the resulting measures are valid or predictive. At the present collection stage, the first evaluation question is whether records can be produced in a form stable enough to accumulate.
+Verified records make query, comparison, layer profiles, and later repeated collection possible, but they do not by themselves establish that the resulting measures are valid or predictive. At the present collection stage, the first evaluation question is whether records can be produced in a form stable enough to accumulate.
 
 Success at this stage concerns the form of the records rather than the values inside them. Fields that work with variable observations, including clinical trials, epidemiology, and satellite measurement, do not begin by assuming every observation will agree. They begin by making the collection procedure explicit enough that variation can be interpreted. IAKM requires the same kind of discipline. A record must be locatable, source-traceable, convention-bound, and auditable. Collections must be poolable across analysts, systems, and domains, because records that cannot join other records cannot form a corpus.
 
@@ -255,11 +251,11 @@ The checks available at this stage ask whether the collection procedure produces
 | Do single-knower dependencies surface recognizably? | Components named by the map as having one associated knower are recognized by participants as difficult to recover |
 | Does declaring a binding do any work? | Some addresses are locatable only under the declared field-domain lens, showing that the binding changes what the map can see |
 
-These checks do not validate prediction, intervention, or generalizability. They ask whether the collection procedure produces records stable and varied enough to support the next stage of study; a negative answer is a reason to revise the procedure before collecting further.
+These checks do not validate prediction, intervention, or generalizability. A negative answer is a reason to revise the procedure before collecting further.
 
 A precedent exists for the last check. Truck factor estimates computed from repository history were taken back to the developers of the systems they described. In eighty-four percent of valid answers, developers agreed or partially agreed that the identified developers were the main authors of their systems, while fifty-three percent gave a positive or partially positive response about the estimated truck factor itself [Avelino et al. 2016]. The same distinction matters here. Who is connected to a component is a claim people can often confirm from where they sit; the value attached to that connection requires more evidence.
 
-Until these checks are run, IAKM should be claimed as a digital mapping system with a coordinate system and methodology for producing verified records, not as a validated predictor of loss. Section 10 turns from collection-stage checks to the standards and longitudinal work needed next.
+Until these checks are run, IAKM should be claimed as a digital mapping system with a coordinate system and methodology for producing verified records, not as a validated predictor of loss.
 
 ---
 
