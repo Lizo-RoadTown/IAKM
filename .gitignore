@@ -54,3 +54,11 @@ desktop.ini
 
 # Intermediate build PDF (IAKM_Public.pdf is the published artifact)
 paper_v7/IAKM_PAPER_V7_IEEE.pdf
+
+# Preprint build artifacts
+preprint/IAKM_Preprints.pdf
+preprint/*.loe
+
+# Raw template downloads (Definitions/ is what the build needs)
+scripts/preprints_template_latex.zip
+scripts/preprints-template.dot

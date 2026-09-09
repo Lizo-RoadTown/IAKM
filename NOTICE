@@ -11,3 +11,11 @@ Commons Attribution 4.0 International License (see LICENSE).
 
 The author makes a patent non-assertion pledge covering the IAKM
 methodology; see PATENTS.md.
+
+THIRD-PARTY FILES
+-----------------
+preprint/Definitions/ contains the MDPI LaTeX class (mdpi.cls) and
+bibliography styles, taken from the official Preprints.org LaTeX template.
+Those files are the property of MDPI and are NOT covered by the licenses
+above. They are included so that the Preprints.org submission version builds
+from a clean checkout. For questions about them, contact latex@mdpi.com.

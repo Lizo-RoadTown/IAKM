@@ -9,6 +9,16 @@
    ```
    This adds MiKTeX to your PATH and enables auto-install of missing LaTeX packages.
 
+## Papers
+
+| Script | Builds |
+|---|---|
+| `build_paper_v7.bat` / `.sh` | Methodology paper, IEEE conference format -> `paper_v7/IAKM_Public.pdf` |
+| `build_preprint.bat` / `.sh` | Preprints.org submission, MDPI format -> `preprint/IAKM_Preprints.pdf` |
+
+Both papers share their prose, tables, and references but have separate `.tex`
+sources. A change to the paper must be made in both.
+
 ## Tools
 
 - `compile_tex.bat` - Compiles any `.tex` to PDF (two passes, cleans artifacts)

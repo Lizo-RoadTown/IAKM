@@ -57,6 +57,11 @@ paper_v7/                       METHODOLOGY PAPER
   IAKM_CITATION_DIGGING_LIST.md Citation provenance notes
   fig1..fig5_*.pdf              Print-ready figures
 
+preprint/                       PREPRINTS.ORG SUBMISSION
+  IAKM_Preprints.tex            Same paper, MDPI single-column format
+  Definitions/                  MDPI class files (third party; see NOTICE)
+  README.md                     Submission checklist and open TODOs
+
 implementation/                 IMPLEMENTATION PAPER
   Observing_Knowledge_at_       Design case, May 2026 (PDF only;
     Structural_Interfaces.pdf   no LaTeX source in this repository)
@@ -87,6 +92,18 @@ Both compile `paper_v7/IAKM_PAPER_V7_IEEE.tex` in two passes and write
 
 The implementation paper is distributed as a PDF only; there is no LaTeX source
 for it in this repository, so it is not rebuildable here.
+
+A second build of the same methodology paper, formatted for
+[Preprints.org](https://www.preprints.org/) submission, lives in
+[`preprint/`](preprint/README.md):
+
+```sh
+scriptsuild_preprint.bat     # Windows
+./scripts/build_preprint.sh    # Linux / macOS
+```
+
+The two versions share their prose, tables, and references but have separate
+`.tex` sources, so a change to the paper must be made in both.
 
 > **Note for contributors:** the `.tex` is the hand-maintained source of record for
 > the PDF, tuned against `IAKM_V7_FLOAT_PLACEMENT.md` (float environments, caption
