@@ -34,7 +34,13 @@ methodology remain free for all to use.
 Public, dated, archival publication is what prevents *any* party — including
 parties unrelated to the author — from later obtaining valid patent claims
 over material disclosed here. The archived record and its DOI establish the
-date and content of that disclosure.
+date and content of that disclosure:
+
+> Osborn, E. (2026). *Interface-Anchored Knowledge Mapping: Methodology and
+> Reference Implementation Materials* (Version 1.00). Zenodo.
+> https://doi.org/10.5281/zenodo.22668058
+
+That deposit is the dated public record this pledge refers to.
 
 The purpose is not merely that the author declines to enclose this work. It
 is that the work not be enclosable.

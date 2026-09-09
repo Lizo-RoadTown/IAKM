@@ -58,15 +58,22 @@ paper_v7/                       METHODOLOGY PAPER
   fig1..fig5_*.pdf              Print-ready figures
 
 preprint/                       PREPRINTS.ORG SUBMISSION
-  IAKM_Preprints.tex            Same paper, MDPI single-column format
+  IAKM_Preprints.tex            Same paper, MDPI single-column (generated)
+  graphical_abstract.png        Graphical abstract (generated)
   Definitions/                  MDPI class files (third party; see NOTICE)
-  README.md                     Submission checklist and open TODOs
+  fig1..fig5_*.pdf              Same figures as paper_v7/
+  README.md                     Submission checklist
 
 implementation/                 IMPLEMENTATION PAPER
   Observing_Knowledge_at_       Design case, May 2026 (PDF only;
     Structural_Interfaces.pdf   no LaTeX source in this repository)
 
 scripts/                        Build tooling (see scripts/README.md)
+
+LICENSE                         CC BY 4.0, for the papers and documentation
+LICENSE-CODE                    Apache 2.0, for scripts/
+NOTICE                          Attribution, including third-party files
+PATENTS.md                      Patent non-assertion pledge
 ```
 
 **Start here:** [`paper_v7/IAKM_Public.pdf`](paper_v7/IAKM_Public.pdf) for the
@@ -102,8 +109,15 @@ scripts\build_preprint.bat     # Windows
 ./scripts/build_preprint.sh    # Linux / macOS
 ```
 
-The two versions share their prose, tables, and references but have separate
-`.tex` sources, so a change to the paper must be made in both.
+The preprint `.tex` is **generated** from the IEEE `.tex`, which is the single
+source of prose, tables, and references:
+
+```sh
+python scripts/generate_preprint_tex.py
+```
+
+So edit `paper_v7/IAKM_PAPER_V7_IEEE.tex` and rerun that script. Do not
+hand-edit `preprint/IAKM_Preprints.tex` — regenerating overwrites it.
 
 > **Note for contributors:** the `.tex` is the hand-maintained source of record for
 > the PDF, tuned against `IAKM_V7_FLOAT_PLACEMENT.md` (float environments, caption
@@ -135,31 +149,40 @@ no single author can settle alone.
 
 ## Citing
 
-Author ORCID: [0009-0007-8678-3307](https://orcid.org/0009-0007-8678-3307)
+Archived on Zenodo, CC BY 4.0.
 
-DOIs will be minted on public release; this section will carry them.
+> Osborn, E. (2026). *Interface-Anchored Knowledge Mapping: Methodology and
+> Reference Implementation Materials* (Version 1.00). Zenodo.
+> https://doi.org/10.5281/zenodo.22668058
+
+Zenodo mints two DOIs for a deposit, and they are not interchangeable:
+
+| DOI | What it points to | Use it when |
+|---|---|---|
+| [`10.5281/zenodo.22668058`](https://doi.org/10.5281/zenodo.22668058) | **Version 1.00** specifically | Citing this work. A reader gets exactly the files you cited |
+| [`10.5281/zenodo.22668057`](https://doi.org/10.5281/zenodo.22668057) | **All versions**, resolving to the latest | Linking to the project generally, where you want the reader to land on the newest release |
+
+Cite the version DOI in a paper. Use the concept DOI in a README or a link.
+
+Author ORCID: [0009-0007-8678-3307](https://orcid.org/0009-0007-8678-3307)
 
 ```bibtex
 @misc{osborn2026iakm,
-  author = {Osborn, Elizabeth},
-  title  = {Interface-Anchored Knowledge Mapping: A Coordinate System for
-            Locating Knowledge-Relevant Metadata in Modular Sociotechnical
-            Systems},
-  year   = {2026},
-  orcid  = {0009-0007-8678-3307},
-  note   = {DOI pending}
-}
-
-@misc{osborn2026observing,
-  author = {Osborn, Elizabeth},
-  title  = {Observing Knowledge at Structural Interfaces: An Iterative Design
-            Case for Automated Knowledge-Capture Support},
-  year   = {2026},
-  month  = {5},
-  orcid  = {0009-0007-8678-3307},
-  note   = {DOI pending}
+  author    = {Osborn, Elizabeth},
+  title     = {Interface-Anchored Knowledge Mapping: Methodology and
+               Reference Implementation Materials},
+  year      = {2026},
+  publisher = {Zenodo},
+  version   = {1.00},
+  orcid     = {0009-0007-8678-3307},
+  doi       = {10.5281/zenodo.22668058},
+  url       = {https://doi.org/10.5281/zenodo.22668058}
 }
 ```
+
+The deposit carries the preprint PDF and the implementation paper. The
+Preprints.org posting will carry its own DOI when it goes live; that one cites
+the manuscript, this one cites the archived materials.
 
 ## License
 

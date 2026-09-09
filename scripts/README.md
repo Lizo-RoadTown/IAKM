@@ -9,6 +9,16 @@
    ```
    This adds MiKTeX to your PATH and enables auto-install of missing LaTeX packages.
 
+## Regenerating the preprint source
+
+```
+python scripts/generate_preprint_tex.py
+```
+
+`paper_v7/IAKM_PAPER_V7_IEEE.tex` is the single source of prose, tables, and
+references. This regenerates `preprint/IAKM_Preprints.tex` from it in MDPI
+format. Never hand-edit the preprint `.tex`; it is overwritten.
+
 ## Papers
 
 | Script | Builds |
