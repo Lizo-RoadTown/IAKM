@@ -86,6 +86,8 @@ licensing a *methodology* is widely misunderstood:
   or implement it in software. Attribution is asked for when you reuse the text,
   figures, or code, and is the normal scholarly courtesy when you build on the
   method.
+- Patents *can* restrict a method where copyright cannot. That door is closed
+  here deliberately: see [`PATENTS.md`](PATENTS.md).
 
 If you apply IAKM to a system, the most useful thing you can contribute back is a
 collection produced under declared bindings and evidence rules. Section 10 of the
@@ -109,12 +111,20 @@ A DOI will be minted on public release; this section will carry it.
 
 ## License
 
-Dual-licensed. See [LICENSE](LICENSE) for the full statement.
+Everything here is open, deliberately and permanently.
 
 | What | License |
 |---|---|
-| Paper, figures, documentation | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
-| Everything under `scripts/` | [MIT](LICENSE-CODE) |
+| Paper, figures, documentation | [CC BY 4.0](LICENSE) |
+| Everything under `scripts/` | [Apache License 2.0](LICENSE-CODE) |
+| Patent rights | [Non-assertion pledge](PATENTS.md) |
 
-Neither license grants patent rights. CC BY 4.0 reserves them expressly
-(§2(b)(2)); the MIT License contains no patent grant.
+You may use, adapt, redistribute, and build on this work commercially. The
+only condition is attribution, which is the ordinary scholarly courtesy.
+
+**On patents.** This work is published as prior art, with the intent that the
+IAKM methodology remain free for all to use and that no party be able to
+enclose it later. The Apache License grants patent rights expressly (Section
+3), and [`PATENTS.md`](PATENTS.md) records an irrevocable non-assertion pledge
+covering the methodology itself. Material here goes beyond any earlier patent
+filing, and that is on purpose.
