@@ -98,7 +98,7 @@ A second build of the same methodology paper, formatted for
 [`preprint/`](preprint/README.md):
 
 ```sh
-scriptsuild_preprint.bat     # Windows
+scripts\build_preprint.bat     # Windows
 ./scripts/build_preprint.sh    # Linux / macOS
 ```
 
@@ -135,6 +135,8 @@ no single author can settle alone.
 
 ## Citing
 
+Author ORCID: [0009-0007-8678-3307](https://orcid.org/0009-0007-8678-3307)
+
 DOIs will be minted on public release; this section will carry them.
 
 ```bibtex
@@ -144,6 +146,7 @@ DOIs will be minted on public release; this section will carry them.
             Locating Knowledge-Relevant Metadata in Modular Sociotechnical
             Systems},
   year   = {2026},
+  orcid  = {0009-0007-8678-3307},
   note   = {DOI pending}
 }
 
@@ -153,6 +156,7 @@ DOIs will be minted on public release; this section will carry them.
             Case for Automated Knowledge-Capture Support},
   year   = {2026},
   month  = {5},
+  orcid  = {0009-0007-8678-3307},
   note   = {DOI pending}
 }
 ```

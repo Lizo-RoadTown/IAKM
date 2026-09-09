@@ -64,6 +64,7 @@ Checked against the Preprints.org author guidance.
 | Affiliation on first page | Yes — Independent Researcher, Pomona, CA, USA |
 | No publisher or journal logos or names | Verified: zero occurrences of MDPI, Preprints, or any logo image in the PDF |
 | Comprehensive bibliography | 13 references, all verified against publisher or Crossref records |
+| ORCID | Yes — [0009-0007-8678-3307](https://orcid.org/0009-0007-8678-3307), rendered as a linked icon after the author name |
 | LaTeX submitted as a complete archive | `scripts/package_preprint.*`, clean-room verified |
 
 Note on the class option: `moreauthors` is used rather than `oneauthor`, even
@@ -81,6 +82,8 @@ that and need no further action:
   designation.
 - Preprints.org recommends an institutional email "where possible". It is not
   applicable here, so the personal address is the correct contact.
+- The ORCID ([0009-0007-8678-3307](https://orcid.org/0009-0007-8678-3307)) carries the persistent identity that an
+  institutional affiliation would otherwise provide.
 
 ### Still needed from the author
 
@@ -99,27 +102,20 @@ that and need no further action:
    did take place on a university program and does report figures about
    identifiable people's knowledge.
 
-2. **ORCID.** Recommended by the venue, and it matters *more* for an
-   independent submission, not less: without an institutional affiliation, an
-   ORCID is the only persistent identifier tying this work to you across
-   venues. Registration is free at orcid.org. A commented `\orcidauthorA`
-   placeholder is in the `.tex`; fill it in and append `\orcidA{}` after the
-   author name.
+2. **Abstract length.** 258 words against MDPI's ~200 guidance. Needs trimming.
 
-3. **Abstract length.** 258 words against MDPI's ~200 guidance. Needs trimming.
-
-4. **Graphical abstract.** Recommended, as JPG or PNG. A screenshot of the
+3. **Graphical abstract.** Recommended, as JPG or PNG. A screenshot of the
    textual abstract does not qualify and will be removed by the editorial
    office. Figure 1 (three senses of location) or Figure 2 (timing and coverage
    plane) is the most likely basis, exported to PNG.
 
-5. **Bibliography recency.** The venue asks for a bibliography "showing
+4. **Bibliography recency.** The venue asks for a bibliography "showing
    relevance to recent research." The current list runs 1962-2023 with only one
    reference from the last five years. For a paper whose contribution depends
    on AI-assisted analysis of work artifacts, the absence of recent literature
    in that area is likely to be noticed.
 
-6. **Article structure.** The venue requires IMRaD structure (introduction,
+5. **Article structure.** The venue requires IMRaD structure (introduction,
    methods, results, discussion) *if reporting original experimental research*.
    This paper is a methodology paper with a reference implementation, and it
    states plainly that it is at the collection stage with reproducibility and
