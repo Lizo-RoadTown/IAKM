@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 145 1200 675" role="img" aria-labelledby="t2 d2">
+  <title id="t2">Observation timing and coverage plane</title>
+  <desc id="d2">The eight method and record types of Table I sorted by when observation is possible and how much of a program it reaches. Method names match Table I exactly. Direct observation of work in progress reaches work as it unfolds but only where an observer is present. Records reach a whole program but only after the work has settled. Meetings, chats, and recorded calls are contemporaneous with the work but partial in reach, and carry no stable address. Only AI-assisted artifact analysis reaches the upper-right region, and it does so without supplying the constraint that makes the observations verifiable.</desc>
+  <defs>
+    <marker id="ax" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937"/>
+    </marker>
+    <style>
+      .bg   { fill: #ffffff; }
+      .t    { font-family: Arial, Helvetica, sans-serif; fill: #1f2937; }
+      .title{ font-size: 33px; font-weight: 700; }
+      .sub  { font-size: 21px; }
+      .axisT{ font-size: 23px; font-weight: 700; }
+      .tick { font-size: 20px; fill: #4b5563; }
+      .name { font-size: 18px; font-weight: 700; fill: #244653; }
+      .name2{ font-size: 17px; font-weight: 700; fill: #244653; }
+      .desc { font-size: 16px; fill: #3f4a52; }
+      .axis { stroke: #1f2937; stroke-width: 3; marker-end: url(#ax); }
+      .grid { stroke: #ddd6cc; stroke-width: 1.4; stroke-dasharray: 7 9; }
+      .observe { fill: #e8f1ed; stroke: #3f6f5a; stroke-width: 2.5; }
+      .record  { fill: #f5efe6; stroke: #8a6f4d; stroke-width: 2.5; }
+      .ai      { fill: #fff6cc; stroke: #a66d00; stroke-width: 3.5; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="145" width="1200" height="675"/>
+
+
+  <rect x="858" y="170" width="300" height="122" rx="10" fill="#fdf6dd" stroke="none"/>
+
+  <line class="grid" x1="290" y1="292" x2="1150" y2="292"/>
+  <line class="grid" x1="290" y1="490" x2="1150" y2="490"/>
+  <line class="grid" x1="290" y1="600" x2="1150" y2="600"/>
+  <line class="grid" x1="620" y1="165" x2="620" y2="710"/>
+  <line class="grid" x1="860" y1="165" x2="860" y2="710"/>
+
+  <line class="axis" x1="290" y1="710" x2="1170" y2="710"/>
+  <line class="axis" x1="290" y1="710" x2="290" y2="160"/>
+
+  <text class="t axisT" transform="translate(46 435) rotate(-90)" text-anchor="middle">Timing of observation</text>
+  <text class="t tick" x="272" y="192" text-anchor="end">while work unfolds</text>
+  <text class="t tick" x="272" y="716" text-anchor="end">after work settles</text>
+
+  <text class="t axisT" x="730" y="786" text-anchor="middle">Coverage across the program</text>
+  <text class="t tick" x="292" y="744">one site</text>
+  <text class="t tick" x="1170" y="744" text-anchor="end">whole program</text>
+
+  <!-- reaches work as it unfolds, one site only -->
+  <rect class="observe" x="300" y="196" width="286" height="104" rx="8"/>
+  <text class="t name" x="443" y="228" text-anchor="middle">Direct observation of</text>
+  <text class="t name" x="443" y="251" text-anchor="middle">work in progress</text>
+  <text class="t desc" x="443" y="280" text-anchor="middle">present at the work, limited reach</text>
+
+  <!-- the region no earlier method reached -->
+  <rect class="ai" x="868" y="196" width="280" height="84" rx="8"/>
+  <text class="t name" x="1008" y="229" text-anchor="middle">AI-assisted artifact analysis</text>
+  <text class="t desc" x="1008" y="257" text-anchor="middle">candidate visibility at scale</text>
+
+  <!-- contemporaneous with the work, but partial in reach and unaddressed -->
+  <rect class="observe" x="596" y="302" width="262" height="96" rx="8"/>
+  <text class="t name2" x="727" y="330" text-anchor="middle">Meetings, chats, and</text>
+  <text class="t name2" x="727" y="352" text-anchor="middle">recorded calls</text>
+  <text class="t desc"  x="727" y="380" text-anchor="middle">rationale without address</text>
+
+  <!-- records: whole program, only after the work has settled -->
+  <rect class="record" x="868" y="410" width="272" height="74" rx="8"/>
+  <text class="t name" x="1004" y="440" text-anchor="middle">Telemetry and logs</text>
+  <text class="t desc" x="1004" y="466" text-anchor="middle">behavior, not knowing</text>
+
+  <rect class="record" x="868" y="496" width="272" height="96" rx="8"/>
+  <text class="t name2" x="1004" y="524" text-anchor="middle">Systems engineering, DSM,</text>
+  <text class="t name2" x="1004" y="546" text-anchor="middle">MBSE, and dependency models</text>
+  <text class="t desc"  x="1004" y="574" text-anchor="middle">structure, not who knows it</text>
+
+  <rect class="record" x="868" y="606" width="272" height="96" rx="8"/>
+  <text class="t name2" x="1004" y="634" text-anchor="middle">Repositories and</text>
+  <text class="t name2" x="1004" y="656" text-anchor="middle">version history</text>
+  <text class="t desc"  x="1004" y="684" text-anchor="middle">artifacts at scale</text>
+
+  <rect class="record" x="590" y="410" width="262" height="74" rx="8"/>
+  <text class="t name" x="721" y="440" text-anchor="middle">Organizational records</text>
+  <text class="t desc" x="721" y="466" text-anchor="middle">roles, not couplings</text>
+
+  <rect class="record" x="590" y="606" width="262" height="74" rx="8"/>
+  <text class="t name" x="721" y="636" text-anchor="middle">Documentation</text>
+  <text class="t desc" x="721" y="662" text-anchor="middle">written after the fact</text>
+</svg>
