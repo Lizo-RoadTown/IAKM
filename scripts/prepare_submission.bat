@@ -43,14 +43,12 @@ copy /y "preprint\IAKM_Preprints.pdf"            "%OUT%\1_manuscript.pdf" >nul
 copy /y "preprint\IAKM_Preprints_submission.zip" "%OUT%\2_latex_source.zip" >nul
 copy /y "preprint\graphical_abstract.png"        "%OUT%\3_graphical_abstract.png" >nul
 
-REM The README is written by the POSIX script; regenerate it here too via bash
-REM if available, otherwise point at the checklist.
-where bash >nul 2>&1
-if %ERRORLEVEL% EQU 0 (
-    bash -c "sed -n '/^PREPRINTS.ORG SUBMISSION/,$p' scripts/prepare_submission.sh | sed '$d' > %OUT%/README.txt" 2>nul
-)
-if not exist "%OUT%\README.txt" (
-    echo See preprint\README.md for the submission checklist. > "%OUT%\README.txt"
+REM README.txt and FORM_FIELDS.txt come from one script, so the Windows
+REM and POSIX paths produce identical folders.
+python "%~dp0write_submission_docs.py" "%OUT%"
+if %ERRORLEVEL% NEQ 0 (
+    echo [ERROR] Could not write the submission docs.
+    exit /b 1
 )
 
 echo.
