@@ -78,7 +78,8 @@ Checked against the Preprints.org author guidance.
 | Corresponding author contact details on first page | Yes |
 | Affiliation on first page | Yes — Independent Researcher, Pomona, CA, USA |
 | No publisher or journal logos or names | Verified: zero occurrences of MDPI, Preprints, or any logo image in the PDF |
-| Comprehensive bibliography | 13 references, all verified against publisher or Crossref records |
+| Bibliography recency | Yes — [14] 2024, [15] 2022, [16] 2025, [17] 2026 added to Section 2, covering repository-history knowledge concentration and LLM-based repository mining |
+| Comprehensive bibliography | 17 references, all verified against publisher or Crossref records |
 | ORCID | Yes — [0009-0007-8678-3307](https://orcid.org/0009-0007-8678-3307), rendered as a linked icon after the author name |
 | Abstract | Yes — 200 words, within MDPI's guidance |
 | Funding statement | Yes — no external funding |
@@ -116,13 +117,7 @@ following the link will get a 404.
 
 ### Still needed from the author
 
-1. **Bibliography recency.** The venue asks for a bibliography "showing
-   relevance to recent research." The current list runs 1962-2023 with only one
-   reference from the last five years. For a paper whose contribution depends
-   on AI-assisted analysis of work artifacts, the absence of recent literature
-   in that area is likely to be noticed.
-
-2. **Article structure.** The venue requires IMRaD structure (introduction,
+1. **Article structure.** The venue requires IMRaD structure (introduction,
    methods, results, discussion) *if reporting original experimental research*.
    This paper is a methodology paper with a reference implementation, and it
    states plainly that it is at the collection stage with reproducibility and
