@@ -81,6 +81,10 @@ Checked against the Preprints.org author guidance.
 | Comprehensive bibliography | 13 references, all verified against publisher or Crossref records |
 | ORCID | Yes — [0009-0007-8678-3307](https://orcid.org/0009-0007-8678-3307), rendered as a linked icon after the author name |
 | Funding statement | Yes — no external funding |
+| Institutional review statement | Yes — Not applicable, with rationale |
+| Informed consent statement | Yes — Not applicable |
+| Data availability statement | Yes — repository link, with the records themselves withheld |
+| Conflicts of interest | Yes — none declared |
 | Graphical abstract | Yes — `graphical_abstract.png`, 1775x1019 px RGB |
 | LaTeX submitted as a complete archive | `scripts/package_preprint.*`, clean-room verified |
 
@@ -102,32 +106,24 @@ that and need no further action:
 - The ORCID ([0009-0007-8678-3307](https://orcid.org/0009-0007-8678-3307)) carries the persistent identity that an
   institutional affiliation would otherwise provide.
 
+### Before you submit
+
+The data availability statement links to
+`https://github.com/Lizo-RoadTown/IAKM`. **That repository is currently
+private.** Make it public before or at submission, or reviewers and readers
+following the link will get a 404.
+
 ### Still needed from the author
 
-1. **Back matter statements.** Three `TODO(author)` placeholders remain in the
-   `.tex`. Funding is already set to "This research received no external
-   funding", which follows from the independent submission.
-   - `\institutionalreview` — see the note below
-   - `\informedconsent` — consent position, or "Not applicable"
-   - `\dataavailability` — where the verified records can be obtained
+1. **Abstract length.** 258 words against MDPI's ~200 guidance. Needs trimming.
 
-   On the review statement: the paper describes an ingest step that reads
-   repositories, issues, reviews, documents, logs, wikis, and meeting records
-   *as they already exist*, and states that teams are not asked to author
-   anything for the map. That supports "Not applicable" on human subjects
-   grounds. It is still your call to make deliberately, because the deployment
-   did take place on a university program and does report figures about
-   identifiable people's knowledge.
-
-2. **Abstract length.** 258 words against MDPI's ~200 guidance. Needs trimming.
-
-3. **Bibliography recency.** The venue asks for a bibliography "showing
+2. **Bibliography recency.** The venue asks for a bibliography "showing
    relevance to recent research." The current list runs 1962-2023 with only one
    reference from the last five years. For a paper whose contribution depends
    on AI-assisted analysis of work artifacts, the absence of recent literature
    in that area is likely to be noticed.
 
-4. **Article structure.** The venue requires IMRaD structure (introduction,
+3. **Article structure.** The venue requires IMRaD structure (introduction,
    methods, results, discussion) *if reporting original experimental research*.
    This paper is a methodology paper with a reference implementation, and it
    states plainly that it is at the collection stage with reproducibility and
