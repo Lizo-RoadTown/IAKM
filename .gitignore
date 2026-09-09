@@ -62,3 +62,4 @@ preprint/*.loe
 # Raw template downloads (Definitions/ is what the build needs)
 scripts/preprints_template_latex.zip
 scripts/preprints-template.dot
+preprint/IAKM_Preprints_submission.zip
