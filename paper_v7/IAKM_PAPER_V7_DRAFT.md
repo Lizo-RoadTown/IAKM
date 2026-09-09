@@ -18,11 +18,11 @@ The methodological problem is therefore to make knowledge loss observable before
 
 ## 2. What Existing Methods Make Visible, and Why Loss Persists
 
-Existing methods already preserve parts of this problem. The question is whether any of them also preserves the relation needed for recovery: who appears connected to knowledge about a specific part of the system, on what evidence, and in a form that can be checked later.
+Existing methods already preserve parts of this problem. The question is whether any of them also preserves the relation needed for recovery. That relation has four parts: a person appears connected to knowledge about a particular component; the connection rests on some evidence; the knowledge was produced, used, or transferred through some interface; and the knowledge may or may not remain recoverable after people, tools, documents, or roles change. Existing methods capture parts of that relation. None records it whole.
 
 The table below compares what each method makes visible and what remains outside its record.
 
-| Method or record type | What it makes visible | What it still misses |
+| Method or record type | What it makes visible | What remains outside the record |
 |---|---|---|
 | Documentation | Procedures, explanations, requirements, and design descriptions | Tacit judgment, changing assumptions, tool drift, and context that was not written down |
 | Repositories and version history | Code, authorship traces, sequencing, and change over time | Why a change mattered, who still understands it, and whether its rationale remains recoverable |
@@ -31,7 +31,9 @@ The table below compares what each method makes visible and what remains outside
 | Direct observation of work in progress | Knowledge as it is used, seen at the site of the work | Coverage across teams that are distributed and working at once |
 | Systems engineering, DSM, MBSE, and dependency models | Components, interfaces, couplings, and technical structure | Which people understand which parts, and on what grounds |
 | Telemetry and logs | Runtime behavior, failures, and operational traces | The human interpretive knowledge needed to explain why behavior occurred |
-| AI-assisted artifact analysis | Large-scale candidate extraction from available artifacts while work is ongoing | Scientific validity, unless constrained by address, evidence, metadata, and verification |
+| AI-assisted artifact analysis | Large-scale candidate extraction from available artifacts while work is ongoing | Verification, address, provenance, epistemic metadata, and recoverability |
+
+Recent work has sharpened this gap rather than closed it. Repository-history methods estimate how concentrated developer knowledge is and visualize where that concentration sits, while leaving open what knowledge exists outside the commit record and why a particular component matters [10], [14], [15]. Large language models have been applied to mining software repositories and to answering repository questions over knowledge graphs, extending how much of an artifact set can be searched and organized [16], [17]. Each of these widens what can be observed without settling how an observation becomes a checkable record.
 
 A digital mapping system for knowledge loss depends on several claims that are already established in other literatures: that systems can be decomposed into components and interfaces, that knowledge can be lost when people and practices change, and that the field of analysis shapes what becomes visible. The table below identifies which part of that foundation each literature supplies.
 

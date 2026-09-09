@@ -1,8 +1,8 @@
 # V7 reference list
 
-Thirteen citations. Every one has been verified against a publisher record, a Crossref record, or the source text itself. None was carried forward from an earlier draft without being checked.
+Seventeen citations. Every one has been verified against a publisher record, a Crossref record, or the source text itself. None was carried forward from an earlier draft without being checked.
 
-**Table XI citation policy, settled 2026-09-09.** The Section 10 method-family table uses a split. An anchor named with an author and a year reads as a citation and carries a reference number: Dalkey and Helmer [12], Biber [13], Silberzahn et al. [11], with the numbers set inside the "Where it is established" column rather than in a column of their own. An anchor that is a named programme, standard, or guidance family stays a bare pointer with no reference: OAEI, PRISMA, METHONTOLOGY, COSMIN, ISO 15489, and the AHRQ registry user guide. Adding all of them would have taken the list past nineteen and made the table look like the paper's main contribution.
+**Table X citation policy, settled 2026-09-09.** The Section 10 method-family table uses a split. An anchor named with an author and a year reads as a citation and carries a reference number: Dalkey and Helmer [12], Biber [13], Silberzahn et al. [11], with the numbers set inside the "Where it is established" column rather than in a column of their own. An anchor that is a named programme, standard, or guidance family stays a bare pointer with no reference: OAEI, PRISMA, METHONTOLOGY, COSMIN, ISO 15489, and the AHRQ registry user guide. Adding all six would have made the table look like the paper's main contribution rather than a pointer to standards work the field still has to do.
 
 Numbered in order of first appearance, which is IEEE submission order.
 
@@ -36,6 +36,14 @@ Numbered in order of first appearance, which is IEEE submission order.
 
 [13] D. Biber, "Representativeness in corpus design," *Literary Linguistic Comput.*, vol. 8, no. 4, pp. 243–257, 1993, doi: 10.1093/llc/8.4.243.
 
+[14] O. Cury and G. Avelino, "Knowledge islands: Visualizing developers knowledge concentration," in *Proc. XXXVIII Simpósio Brasileiro de Engenharia de Software (SBES)*, 2024, pp. 789–795, doi: 10.5753/sbes.2024.3610.
+
+[15] E. Jabrayilzade, M. Evtikhiev, E. Tüzün, and V. Kovalenko, "Bus factor in practice," in *Proc. 44th Int. Conf. Softw. Eng.: Softw. Eng. Pract. (ICSE-SEIP)*, 2022, pp. 97–106, doi: 10.1145/3510457.3513082.
+
+[16] V. De Martino, J. Castaño, F. Palomba, X. Franch, and S. Martínez-Fernández, "A methodological framework for LLM-based mining of software repositories," arXiv:2508.02233, 2025.
+
+[17] S. Abedu, S. Khatoonabadi, and E. Shihab, "Synergizing LLMs and knowledge graphs: A novel approach to software repository-related question answering," *ACM Trans. Softw. Eng. Methodol.*, Feb. 2026, Art. no. 3796510, doi: 10.1145/3796510.
+
 ---
 
 ## Verification status
@@ -53,6 +61,14 @@ Numbered in order of first appearance, which is IEEE submission order.
 | 9 | Hjørland 2002 | Crossref, plus the publisher record for the eleven approaches | Verified | Eleven approaches confirmed. Full text not read |
 | 10 | Avelino et al. 2016 | Publisher record and abstract | Verified | Verified. The 84 and 53 percent figures are from the source |
 | 11 | Silberzahn et al. 2018 | Publisher record and abstract | Verified | Verified. Team count, effect range, and the expertise finding are from the source |
+| 12 | Dalkey and Helmer 1963 | Crossref | Verified | Named as a method family anchor only |
+| 13 | Biber 1993 | Crossref | Verified | Named as a method family anchor only |
+| 14 | Cury and Avelino 2024 | Crossref and the SBES record | Verified, and upgraded | Supplied as arXiv:2408.08733. The peer-reviewed SBES 2024 version is cited instead |
+| 15 | Jabrayilzade et al. 2022 | Crossref | Verified | Pages 97–106 added; they were missing as supplied |
+| 16 | De Martino et al. 2025 | arXiv record | Verified | **Unrefereed preprint.** Author initials corrected: V. De Martino and J. Castaño, not G. and F. |
+| 17 | Abedu et al. 2026 | Crossref | Verified, title corrected | Title was missing "A novel approach to". Online-first, so no volume, issue, or pages exist yet; cited by ACM article number |
+
+**Recency, addressed 2026-09-09.** Before this pass, nothing in the list was newer than 2023, which invites the reviewer question of whether the gap is still open. Entries [14] through [17] were added to Section 2 for that reason. The turnover literature was left at Galan 2023 [5], where a 2023 source is still current for the field; the recency pressure is on the AI side, where the state of the art moves fastest and a reviewer will ask whether LLM repository mining has already closed the gap. Two were corrected on the way in: [17] had an incomplete title and [19] had the wrong title entirely, both on DOIs that resolve, which is the failure mode a spot check does not catch. [16] is an unrefereed preprint and is the only one in the list; it is cited alongside the peer-reviewed [17] and carries no claim on its own. Both AI entries are fragile by nature: [16] has no venue and [17] is online-first with no volume, issue, or pages yet. Neither should ever carry a load-bearing claim, and in Section 2 neither does.
 
 Three entries carry bibliographic verification without a content read: Argote, Lave and Wenger, and Hjørland and Albrechtsen. None carries a figure or a specific finding in V7, so each supports only a general characterization of its own field. That is the weakest acceptable standing for a citation, and it is worth closing before submission if the sources are obtainable.
 

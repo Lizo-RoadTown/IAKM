@@ -46,9 +46,9 @@ Locating Knowledge-Relevant Metadata in Modular Sociotechnical Systems}
 % Submitted as an independent researcher, not under an institutional
 % affiliation. The personal address is therefore the correct contact.
 \address{%
-$^{1}$ \quad Independent Researcher, Pomona, CA, USA; lizocontactinfo@gmail.com}
+$^{1}$ \quad Independent Researcher, Pomona, CA, USA; eosborn@cpp.edu}
 
-\corres{Correspondence: lizocontactinfo@gmail.com}
+\corres{Correspondence: eosborn@cpp.edu}
 
 \abstract{Rapid emerging-technology work produces knowledge faster than organizations can preserve it. Methods, tools, dependencies, and decisions change while teams are building, so knowledge formed during debugging, integration, adaptation, and interpretation can disappear before documentation, mentorship, or succession planning catches it. Interface-Anchored Knowledge Mapping (IAKM) is a digital mapping system and methodology for capturing knowledge-relevant metadata as that knowledge emerges, without requiring the knowledge itself to be stored. It begins with preemptive decomposition of a modular sociotechnical system: components, couplings, and interfaces are identified before loss occurs, creating candidate structural locations where knowledge may appear. AI-assisted analysis then examines ordinary work artifacts at scale, treating digital interfaces as observability lenses where evidence about people, components, decisions, failures, and recoverability can be found. Verified records are anchored by a five-element coordinate: governing field, domain, interface layer, component, and knower. Interface layers are binding-relative, so the analytical lens is recorded inside the address, while structural location remains distinct from evidence capture and carrier location. A reference implementation in a distributed aerospace program produced 121 verified nodes and 24 verified edges in its most recent extraction run, under one binding and with partial coverage. The work remains at the collection stage; reproducibility, reviewer agreement, cross-domain validity, and predictive value remain untested.}
 
@@ -69,7 +69,7 @@ The methodological problem is therefore to make knowledge loss observable before
 
 \section{What Existing Methods Make Visible, and Why Loss Persists}\label{sec:2}
 
-Existing methods already preserve parts of this problem. The question is whether any of them also preserves the relation needed for recovery: who appears connected to knowledge about a specific part of the system, on what evidence, and in a form that can be checked later.
+Existing methods already preserve parts of this problem. The question is whether any of them also preserves the relation needed for recovery. That relation has four parts: a person appears connected to knowledge about a particular component; the connection rests on some evidence; the knowledge was produced, used, or transferred through some interface; and the knowledge may or may not remain recoverable after people, tools, documents, or roles change. Existing methods capture parts of that relation. None records it whole.
 
 Table~\ref{tab:methods} compares what each method makes visible and what remains outside its record. Fig.~\ref{fig:timing-coverage} places the same methods on two axes that matter for recovery: when the observation happens, and how much of the program it reaches.
 
@@ -80,7 +80,7 @@ Table~\ref{tab:methods} compares what each method makes visible and what remains
 \scriptsize
 \begin{tabularx}{\textwidth}{XXX}
 \hline
-\textbf{Method or record type} & \textbf{What it makes visible} & \textbf{What it still misses} \\
+\textbf{Method or record type} & \textbf{What it makes visible} & \textbf{What remains outside the record} \\
 \hline
 Documentation & Procedures, explanations, requirements, and design descriptions & Tacit judgment, changing assumptions, tool drift, and context that was not written down \\
 Repositories and version history & Code, authorship traces, sequencing, and change over time & Why a change mattered, who still understands it, and whether its rationale remains recoverable \\
@@ -89,10 +89,12 @@ Meetings, chats, and recorded calls & Discussion, coordination, rationale, quest
 Direct observation of work in progress & Knowledge as it is used, seen at the site of the work & Coverage across teams that are distributed and working at once \\
 Systems engineering, DSM, MBSE, and dependency models & Components, interfaces, couplings, and technical structure & Which people understand which parts, and on what grounds \\
 Telemetry and logs & Runtime behavior, failures, and operational traces & The human interpretive knowledge needed to explain why behavior occurred \\
-AI-assisted artifact analysis & Large-scale candidate extraction from available artifacts while work is ongoing & Scientific validity, unless constrained by address, evidence, metadata, and verification \\
+AI-assisted artifact analysis & Large-scale candidate extraction from available artifacts while work is ongoing & Verification, address, provenance, epistemic metadata, and recoverability \\
 \hline
 \end{tabularx}
 \end{table}
+
+Recent work has sharpened this gap rather than closed it. Repository-history methods estimate how concentrated developer knowledge is and visualize where that concentration sits, while leaving open what knowledge exists outside the commit record and why a particular component matters \cite{avelino2016,cury2024,jabrayilzade2022}. Large language models have been applied to mining software repositories and to answering repository questions over knowledge graphs, extending how much of an artifact set can be searched and organized \cite{demartino2025,abedu2026}. Each of these widens what can be observed without settling how an observation becomes a checkable record.
 
 A digital mapping system for knowledge loss depends on several claims that are already established in other literatures: that systems can be decomposed into components and interfaces, that knowledge can be lost when people and practices change, and that the field of analysis shapes what becomes visible. Table~\ref{tab:literature} identifies which part of that foundation each literature supplies.
 
@@ -552,6 +554,14 @@ reproducible independently of that store.}
 \bibitem{dalkey1963} N. Dalkey and O. Helmer, ``An experimental application of the DELPHI method to the use of experts,'' \emph{Manage. Sci.}, vol. 9, no. 3, pp. 458--467, Apr. 1963, doi: 10.1287/mnsc.9.3.458.
 
 \bibitem{biber1993} D. Biber, ``Representativeness in corpus design,'' \emph{Literary Linguistic Comput.}, vol. 8, no. 4, pp. 243--257, 1993, doi: 10.1093/llc/8.4.243.
+
+\bibitem{cury2024} O. Cury and G. Avelino, ``Knowledge islands: Visualizing developers knowledge concentration,'' in \emph{Proc. XXXVIII Simp\'{o}sio Brasileiro de Engenharia de Software (SBES)}, 2024, pp. 789--795, doi: 10.5753/sbes.2024.3610.
+
+\bibitem{jabrayilzade2022} E. Jabrayilzade, M. Evtikhiev, E. T\"{u}z\"{u}n, and V. Kovalenko, ``Bus factor in practice,'' in \emph{Proc. 44th Int. Conf. Softw. Eng.: Softw. Eng. Pract. (ICSE-SEIP)}, 2022, pp. 97--106, doi: 10.1145/3510457.3513082.
+
+\bibitem{demartino2025} V. De Martino, J. Casta\~{n}o, F. Palomba, X. Franch, and S. Mart\'{i}nez-Fern\'{a}ndez, ``A methodological framework for LLM-based mining of software repositories,'' arXiv:2508.02233, 2025.
+
+\bibitem{abedu2026} S. Abedu, S. Khatoonabadi, and E. Shihab, ``Synergizing LLMs and knowledge graphs: A novel approach to software repository-related question answering,'' \emph{ACM Trans. Softw. Eng. Methodol.}, Feb. 2026, Art. no. 3796510, doi: 10.1145/3796510.
 
 \end{thebibliography}
 }
