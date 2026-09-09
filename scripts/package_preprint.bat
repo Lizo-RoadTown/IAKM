@@ -28,7 +28,7 @@ if not exist "preprint\IAKM_Preprints.pdf" (
 if exist "%OUT%" del /q "%OUT%"
 
 powershell -NoProfile -Command ^
-  "$items = Get-ChildItem -Path 'preprint' -Exclude '*.zip','README.md','*.aux','*.log','*.out','*.synctex.gz','*.spl','*.bbl','*.blg','*.toc','*.loe';" ^
+  "$items = Get-ChildItem -Path 'preprint' -Exclude '*.zip','README.md','graphical_abstract.png','*.aux','*.log','*.out','*.synctex.gz','*.spl','*.bbl','*.blg','*.toc','*.loe';" ^
   "Compress-Archive -Path $items -DestinationPath '%OUT%' -Force"
 
 if not exist "%OUT%" (
