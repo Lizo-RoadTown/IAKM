@@ -63,3 +63,6 @@ preprint/*.loe
 scripts/preprints_template_latex.zip
 scripts/preprints-template.dot
 preprint/IAKM_Preprints_submission.zip
+
+# Assembled upload folder (derived; rerun scripts/prepare_submission.*)
+submission/

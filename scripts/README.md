@@ -19,6 +19,18 @@
 Both papers share their prose, tables, and references but have separate `.tex`
 sources. A change to the paper must be made in both.
 
+## Submitting
+
+```
+scripts\prepare_submission.bat     # Windows
+./scripts/prepare_submission.sh    # Linux / macOS
+```
+
+Rebuilds the manuscript, the graphical abstract, and the LaTeX source archive,
+then assembles `submission/` with the three files Preprints.org asks for and a
+README naming which field each one goes in. The folder is gitignored because
+everything in it is derived; rerun the script to recreate it.
+
 ## Tools
 
 - `compile_tex.bat` - Compiles any `.tex` to PDF (two passes, cleans artifacts)
