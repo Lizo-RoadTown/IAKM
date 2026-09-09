@@ -1,6 +1,8 @@
 # V7 reference list
 
-Eleven citations. Every one has been verified against a publisher record, a Crossref record, or the source text itself. None was carried forward from an earlier draft without being checked.
+Thirteen citations. Every one has been verified against a publisher record, a Crossref record, or the source text itself. None was carried forward from an earlier draft without being checked.
+
+**Table XI citation policy, settled 2026-09-09.** The Section 10 method-family table uses a split. An anchor named with an author and a year reads as a citation and carries a reference number: Dalkey and Helmer [12], Biber [13], Silberzahn et al. [11], with the numbers set inside the "Where it is established" column rather than in a column of their own. An anchor that is a named programme, standard, or guidance family stays a bare pointer with no reference: OAEI, PRISMA, METHONTOLOGY, COSMIN, ISO 15489, and the AHRQ registry user guide. Adding all of them would have taken the list past nineteen and made the table look like the paper's main contribution.
 
 Numbered in order of first appearance, which is IEEE submission order.
 
@@ -29,6 +31,10 @@ Numbered in order of first appearance, which is IEEE submission order.
 [10] G. Avelino, L. Passos, A. Hora, and M. T. Valente, "A novel approach for estimating Truck Factors," in *Proc. 2016 IEEE 24th Int. Conf. Program Comprehension (ICPC)*, Austin, TX, USA, 2016, pp. 1–10, doi: 10.1109/ICPC.2016.7503718.
 
 [11] R. Silberzahn, E. L. Uhlmann, D. P. Martin, et al., "Many analysts, one data set: Making transparent how variations in analytic choices affect results," *Adv. Methods Practices Psychol. Sci.*, vol. 1, no. 3, pp. 337–356, 2018, doi: 10.1177/2515245917747646.
+
+[12] N. Dalkey and O. Helmer, "An experimental application of the DELPHI method to the use of experts," *Manage. Sci.*, vol. 9, no. 3, pp. 458–467, Apr. 1963, doi: 10.1287/mnsc.9.3.458.
+
+[13] D. Biber, "Representativeness in corpus design," *Literary Linguistic Comput.*, vol. 8, no. 4, pp. 243–257, 1993, doi: 10.1093/llc/8.4.243.
 
 ---
 

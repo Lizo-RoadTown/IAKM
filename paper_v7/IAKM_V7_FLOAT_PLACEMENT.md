@@ -227,15 +227,87 @@ Replace with:
 
 ---
 
+## Citations and the reference list
+
+**The reference list has THIRTEEN entries.** The source of record is `IAKM_V7_REFERENCES.md` in this folder. If the `.tex` bibliography stops at [11], it is stale. Pull [12] and [13] before building.
+
+### Table X citation policy, settled 2026-09-09. Do not re-litigate.
+
+Table X names ten method families. The anchors are treated in two classes:
+
+| Class | Anchors | Treatment |
+|---|---|---|
+| Named with an author and a year | Dalkey and Helmer, Biber, Silberzahn et al. | Carry a reference number |
+| Named programme, standard, or guidance family | OAEI, PRISMA, METHONTOLOGY, COSMIN, ISO 15489, AHRQ registry user guide | Bare pointer. **No reference entry.** |
+
+A standard moves into the first class only if the manuscript discusses it in prose. None currently does, so none moves.
+
+**No separate citation column.** The three numbers sit inside the existing "Where it is established" column. Table X stays three columns wide.
+
+The three cells, verbatim:
+
+```
+Delphi studies              | Expert consensus and standards development; Dalkey and Helmer [12]
+Reference corpus construction | Corpus linguistics and information retrieval evaluation; Biber [13]
+Many-analyst designs        | Metascience; Silberzahn et al. [11]
+```
+
+Reason for the policy, recorded so it is not undone by a later pass: adding entries for all six programme anchors would take the list past nineteen and make Table X read as the paper's main contribution rather than as a pointer to standards work the field still has to do.
+
+### The two entries to add
+
+`thebibliography` form:
+
+```latex
+\bibitem{dalkey1963}
+N. Dalkey and O. Helmer, "An experimental application of the DELPHI method to the use of experts,"
+\emph{Manage. Sci.}, vol. 9, no. 3, pp. 458--467, Apr. 1963, doi: 10.1287/mnsc.9.3.458.
+
+\bibitem{biber1993}
+D. Biber, "Representativeness in corpus design," \emph{Literary Linguistic Comput.},
+vol. 8, no. 4, pp. 243--257, 1993, doi: 10.1093/llc/8.4.243.
+```
+
+BibTeX form, if the build uses a `.bib`:
+
+```bibtex
+@article{dalkey1963,
+  author  = {Dalkey, Norman and Helmer, Olaf},
+  title   = {An experimental application of the {DELPHI} method to the use of experts},
+  journal = {Management Science},
+  volume  = {9}, number = {3}, pages = {458--467},
+  year    = {1963}, month = apr,
+  doi     = {10.1287/mnsc.9.3.458}
+}
+@article{biber1993,
+  author  = {Biber, Douglas},
+  title   = {Representativeness in corpus design},
+  journal = {Literary and Linguistic Computing},
+  volume  = {8}, number = {4}, pages = {243--257},
+  year    = {1993},
+  doi     = {10.1093/llc/8.4.243}
+}
+```
+
+Both were verified against Crossref on 2026-09-09. Note the capitalization: the Dalkey and Helmer title carries **DELPHI** in full caps as published, which is why the BibTeX title wraps it in braces. Do not let BibTeX lowercase it.
+
+### One false alarm to expect
+
+A reference-integrity check run against the **markdown** will report [3] through [10] as defined-but-uncited. That is an artifact: Table II in the markdown still carries author-year names in its Source column, and the build converts them to numbers. Run the check against the `.tex` or the PDF, not the `.md`.
+
+---
+
 ## Sanity check before declaring the build done
 
-Run these five checks and report the results rather than a summary:
+Run these seven checks and report the results rather than a summary:
 
 1. Every `\label` has at least one `\ref` pointing at it, and every `\ref` resolves. No `??` in the compiled PDF.
 2. Figure captions are below their figures, table captions above their tables. Spot-check Fig. 1 and Table I.
 3. No float appears before its first callout in the reading order of the compiled PDF. If one does, move the callout earlier rather than forcing the float.
 4. Table I and Fig. 1 are on the same page or facing pages. Same for Table III and Fig. 2, Table IX and Fig. 4.
 5. No table overruns the column or page width. Check Table VII and Table X specifically, since they are the widest.
+6. **The reference list ends at [13], not [11].** Confirm [12] Dalkey and Helmer and [13] Biber both appear in the compiled PDF, and that Table X's three bracketed numbers resolve to them and to [11].
+7. No reference entry exists for OAEI, PRISMA, METHONTOLOGY, COSMIN, ISO 15489, or the AHRQ registry user guide. Those are deliberate bare pointers.
 
 
 ---

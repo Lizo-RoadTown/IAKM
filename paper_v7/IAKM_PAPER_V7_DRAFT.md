@@ -41,7 +41,7 @@ A digital mapping system for knowledge loss depends on several claims that are a
 | Interfaces carry types and differential magnitude, so a pair is described by a vector | Pimmler and Eppinger 1994 | Coupling strength is recorded per layer, never as one number |
 | The design structure matrix tradition has extended that representation across lineages | Browning 2016 | The representation can be adopted rather than argued for |
 | Organizations accumulate knowledge through experience and lose it over time | Argote 1999 | The loss is real and has been measured |
-| Departures can reduce recoverable expertise, though severity by structural position is unsettled | Galan 2023 | A recovery record must capture position and knower before the question can be posed |
+| Departures can reduce the expertise available to an organization, though severity by structural position is unsettled | Galan 2023 | A recovery record must capture position and knower before the question can be posed |
 | Knowledge can be associated with activity and position, but observing it requires presence | Lave and Wenger 1991; Hutchins 1995 | Location was reached once, by a method that does not scale |
 | The field under which a system is examined governs what becomes visible within it | Hjørland and Albrechtsen 1995; Hjørland 2002 | The field and domain of analysis have to be declared inside the record |
 
