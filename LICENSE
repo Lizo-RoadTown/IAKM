@@ -1,0 +1,58 @@
+IAKM — Interface-Anchored Knowledge Mapping
+Copyright (c) 2026 Elizabeth Osborn
+
+This repository is licensed in two parts.
+
+================================================================
+1. PAPER, FIGURES, AND DOCUMENTATION
+================================================================
+
+The paper, its figures, and the accompanying documentation in this
+repository are licensed under the
+
+    Creative Commons Attribution 4.0 International License
+    (CC BY 4.0)
+    SPDX-License-Identifier: CC-BY-4.0
+
+The full legal code is at:
+    https://creativecommons.org/licenses/by/4.0/legalcode
+A plain-language summary is at:
+    https://creativecommons.org/licenses/by/4.0/
+
+You are free to share and adapt this material, including commercially,
+provided you give appropriate credit, link to the license, and indicate
+whether changes were made.
+
+Suggested attribution:
+
+    Osborn, E. (2026). Interface-Anchored Knowledge Mapping: A
+    Coordinate System for Locating Knowledge-Relevant Metadata in
+    Modular Sociotechnical Systems. Licensed under CC BY 4.0.
+
+================================================================
+2. SCRIPTS AND CODE
+================================================================
+
+Everything under scripts/ is licensed under the MIT License, reproduced
+in LICENSE-CODE.
+
+    SPDX-License-Identifier: MIT
+
+================================================================
+3. WHAT THESE LICENSES DO AND DO NOT COVER
+================================================================
+
+Copyright protects the expression of an idea, not the idea itself. Under
+17 U.S.C. 102(b), copyright protection does not extend to any "idea,
+procedure, process, system, method of operation, concept, principle, or
+discovery."
+
+The IAKM methodology is a method. The licenses above therefore govern
+copying and redistribution of the DOCUMENT and the CODE. They do not,
+and cannot, govern use of the methodology itself. Anyone may apply the
+IAKM method, independently of these licenses.
+
+Neither license grants any patent right. CC BY 4.0 states this expressly
+(Section 2(b)(2): "Patent and trademark rights are not licensed under
+this Public License"). The MIT License contains no express patent grant.
+Patent rights, if any, are reserved and are unaffected by this file.

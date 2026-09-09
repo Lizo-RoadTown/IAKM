@@ -1,11 +1,3 @@
-<!-- BUILD SOURCE OF RECORD
-Generated 2026-09-09 from canon/IAKM_PAPER_V7_DRAFT.md
-11 tables. 11 sections. 5 figures supplied separately.
-If your copy does not contain a table headed
-  | Collection-stage question | What would support continuing |
-then it is STALE. Stop and get this file.
--->
-
 # Interface-Anchored Knowledge Mapping
 
 ## A Coordinate System for Locating Knowledge-Relevant Metadata in Modular Sociotechnical Systems
@@ -61,7 +53,7 @@ Across the methods surveyed here, the missing element is a shared way to record 
 
 A mapping system for knowledge loss requires the system to be decomposed before the loss occurs. Components, couplings, boundaries, and interfaces must be identifiable while the people, artifacts, practices, and traces that carry recoverable knowledge are still present.
 
-The decomposition is not supplied by the knowledge record itself. It is supplied by a structural model of the sociotechnical system. That role can be filled by nearly decomposable architecture, which treats the system as a molecular structure: bond strengths between elements differ by orders of magnitude, so modules are defined by relatively tighter internal bonds and looser relations across boundaries [1]. Couplings are the relations between parts, typically stronger inside a module than across its boundary. Interfaces occur where parts connect, within modules as well as across module boundaries. Sustaining mechanisms are the formal or informal structures that keep an interface working, such as a role, tool, protocol, or shared repository. The first three of these units, module, coupling, and interface, are inherited from systems and modularity literature. A sustaining mechanism field is added because a sociotechnical interface is not fully described by the fact that a connection exists; the record also needs to state what, if anything, keeps that connection usable.
+The decomposition comes from a structural model of the sociotechnical system rather than from the knowledge record itself. That role can be filled by nearly decomposable architecture, which treats the system as a molecular structure: bond strengths between elements differ by orders of magnitude, so modules are defined by relatively tighter internal bonds and looser relations across boundaries [1]. Couplings are the relations between parts, typically stronger inside a module than across its boundary. Interfaces occur where parts connect, within modules as well as across module boundaries. Sustaining mechanisms are the formal or informal structures that keep an interface working, such as a role, tool, protocol, or shared repository. The first three of these units, module, coupling, and interface, are inherited from systems and modularity literature. A sustaining mechanism field is added because a sociotechnical interface is not fully described by the fact that a connection exists; the record also needs to state what, if anything, keeps that connection usable.
 
 Preemptive decomposition matters because it gives the later map places to look. Once components and interfaces are identifiable, knowledge-relevant metadata can be sought at the relations where people, artifacts, tools, practices, and system parts meet. At the present collection stage, interface characterization guides search by suggesting what kinds of evidence may be recoverable. It remains a heuristic rather than a proof rule until repeated collections show whether those interface characteristics correspond reliably to recoverable metadata.
 
@@ -83,7 +75,7 @@ The methodology of IAKM specifies how those observations are decomposed, address
 
 The methodology is specified for modular sociotechnical systems in which components can be identified, ordinary work produces artifacts, and a governing field can be declared. It is not specified for systems without identifiable components, for knowledge unrelated to any component, or for settings where no artifact record exists.
 
-The account below specifies the methodology: the mapping problem it addresses, the record it must produce, the coordinate system used to address records, the procedure for producing verified records, and the standards required for collections to accumulate. The reference implementation is included only to show that portions of the methodology were exercised in software and to state what was and was not demonstrated.
+The reference implementation appears only as evidence that portions of the methodology were exercised in software, and to state what was and was not demonstrated.
 
 ---
 
@@ -135,13 +127,7 @@ Nothing else belongs in the address. The descriptors below attach to an address 
 
 Type and strength are what the design structure matrix tradition already records about an interface [2]. Sustaining mechanism adds a separate descriptor: what, if anything, keeps the relation usable.
 
-Address identity is strict, and partial agreement is still informative.
-
-| Elements equal | What follows |
-|---|---|
-| All five, and only then | The two addresses are identical, so independent records of one system can be differenced |
-| C and K, across different bindings | The maps join at those anchors, without collapsing the layers each binding exposes |
-| C fixed, K varied | The number of knowers named at that component becomes visible |
+Address identity is strict, and partial agreement is still informative. Two records refer to the same address only when all five elements match, which is what allows independent records of one system to be differenced. Records produced under different bindings still join through their shared component and knower anchors, without collapsing the layers each binding exposes. Holding a component fixed while varying the knower makes visible how many knowers are named at that component.
 
 A component at which exactly one verified address names a knower is a structural condition of the record, and not by itself a prediction that knowledge will be lost.
 
@@ -289,14 +275,14 @@ Other fields already have methods for building conventions when categories are s
 
 | Method family | Where it is established | What it can help build for IAKM |
 |---|---|---|
-| Delphi studies | Expert consensus and standards development; Dalkey and Helmer 1963 | Convergence on definitions, categories, reviewer rules, and convention choices |
+| Delphi studies | Expert consensus and standards development; Dalkey and Helmer [12] | Convergence on definitions, categories, reviewer rules, and convention choices |
 | Evaluation campaigns and shared tasks | Ontology matching, OAEI; shared tasks in natural language processing and information retrieval | Shared source sets, common output formats, benchmark comparison, visible disagreement |
-| Reference corpus construction | Corpus linguistics and information retrieval evaluation; Biber 1993 | Common records built under documented sampling and annotation rules |
+| Reference corpus construction | Corpus linguistics and information retrieval evaluation; Biber [13] | Common records built under documented sampling and annotation rules |
 | Registry design | Medical and public health registries; AHRQ registry user guide | Stable schemas, longitudinal accumulation, versioned data definitions |
 | Systematic review protocols | Evidence synthesis; PRISMA | Inclusion criteria, extraction fields, source traceability, disagreement handling |
 | Content analysis and codebook development | Communication research and qualitative methods | Coding rules, coder training, agreement checks, category refinement |
 | Ontology engineering | Knowledge representation; METHONTOLOGY | Formal vocabulary, classes, relations, identity rules |
-| Many-analyst designs | Metascience; Silberzahn et al. 2018 | Shows where competent analysts diverge under shared data and task definitions |
+| Many-analyst designs | Metascience; Silberzahn et al. [11] | Shows where competent analysts diverge under shared data and task definitions |
 | Measurement-instrument development | Psychometrics; COSMIN | Reliability, validity, calibration, construct definition |
 | Records and provenance standards | Archival records management; ISO 15489 | Provenance, audit trails, record metadata, custody, traceability |
 

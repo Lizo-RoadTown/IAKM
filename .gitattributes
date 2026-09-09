@@ -1,0 +1,13 @@
+# Normalize text files in the repo, check out platform-native by default.
+* text=auto
+
+# Shell scripts must keep LF or the shebang breaks on Linux/macOS.
+*.sh text eol=lf
+
+# Batch files must keep CRLF for cmd.exe.
+*.bat text eol=crlf
+
+# Binary artifacts — never touch line endings, never diff as text.
+*.pdf binary
+*.png binary
+*.jpg binary

@@ -40,3 +40,17 @@ desktop.ini
 
 # Claude Code session logs
 .claude/logs/
+
+# LaTeX build artifacts
+*.aux
+*.out
+*.synctex.gz
+*.spl
+*.bbl
+*.blg
+*.toc
+*.fls
+*.fdb_latexmk
+
+# Intermediate build PDF (IAKM_Public.pdf is the published artifact)
+paper_v7/IAKM_PAPER_V7_IEEE.pdf
