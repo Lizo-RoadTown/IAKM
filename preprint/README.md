@@ -61,7 +61,7 @@ Checked against the Preprints.org author guidance.
 | Abstract on first page | Yes |
 | Keywords on first page | Yes |
 | Corresponding author contact details on first page | Yes |
-| Affiliation on first page | Present, but see below |
+| Affiliation on first page | Yes — Independent Researcher, Pomona, CA, USA |
 | No publisher or journal logos or names | Verified: zero occurrences of MDPI, Preprints, or any logo image in the PDF |
 | Comprehensive bibliography | 13 references, all verified against publisher or Crossref records |
 | LaTeX submitted as a complete archive | `scripts/package_preprint.*`, clean-room verified |
@@ -71,41 +71,55 @@ though there is one author. `mdpi.cls` suppresses the `\corres` correspondence
 line entirely under `oneauthor`, and Preprints.org requires corresponding
 author contact details on the first page.
 
+### Submission stance
+
+This preprint is submitted by an **independent researcher**, not under an
+institutional affiliation. Two of the venue's recommendations are settled by
+that and need no further action:
+
+- The affiliation line reads "Independent Researcher", which is the standard
+  designation.
+- Preprints.org recommends an institutional email "where possible". It is not
+  applicable here, so the personal address is the correct contact.
+
 ### Still needed from the author
 
 1. **Back matter statements.** Four `TODO(author)` placeholders in the `.tex`:
-   - `\funding` — funder and grant number, or an explicit statement of none
-   - `\institutionalreview` — the IRB determination for the reference
-     implementation, which was deployed on a university program involving
-     people, or an explicit "Not applicable" with rationale
+   - `\funding` — most likely "This research received no external funding",
+     which follows from the independent submission, but state it explicitly
+   - `\institutionalreview` — see the note below
    - `\informedconsent` — consent position, or "Not applicable"
    - `\dataavailability` — where the verified records can be obtained
 
-2. **Institutional email.** Preprints.org asks for an institutional address
-   (e.g. a university one) or an address used in previously published papers,
-   to help with author identification. The manuscript currently carries a
-   Gmail address.
+   On the review statement: the paper describes an ingest step that reads
+   repositories, issues, reviews, documents, logs, wikis, and meeting records
+   *as they already exist*, and states that teams are not asked to author
+   anything for the map. That supports "Not applicable" on human subjects
+   grounds. It is still your call to make deliberately, because the deployment
+   did take place on a university program and does report figures about
+   identifiable people's knowledge.
 
-3. **Affiliation.** The address line reads "Pomona, CA, USA" — a location, not
-   an institution. If there is an institutional affiliation, it belongs here.
+2. **ORCID.** Recommended by the venue, and it matters *more* for an
+   independent submission, not less: without an institutional affiliation, an
+   ORCID is the only persistent identifier tying this work to you across
+   venues. Registration is free at orcid.org. A commented `\orcidauthorA`
+   placeholder is in the `.tex`; fill it in and append `\orcidA{}` after the
+   author name.
 
-4. **ORCID.** Recommended by the venue. A commented `\orcidauthorA` placeholder
-   is in the `.tex`; fill it in and append `\orcidA{}` after the author name.
+3. **Abstract length.** 258 words against MDPI's ~200 guidance. Needs trimming.
 
-5. **Abstract length.** 258 words against MDPI's ~200 guidance. Needs trimming.
-
-6. **Graphical abstract.** Recommended, as JPG or PNG. A screenshot of the
+4. **Graphical abstract.** Recommended, as JPG or PNG. A screenshot of the
    textual abstract does not qualify and will be removed by the editorial
    office. Figure 1 (three senses of location) or Figure 2 (timing and coverage
    plane) is the most likely basis, exported to PNG.
 
-7. **Bibliography recency.** The venue asks for a bibliography "showing
-   relevance to recent research." The current list runs 1962–2023 with only one
+5. **Bibliography recency.** The venue asks for a bibliography "showing
+   relevance to recent research." The current list runs 1962-2023 with only one
    reference from the last five years. For a paper whose contribution depends
    on AI-assisted analysis of work artifacts, the absence of recent literature
    in that area is likely to be noticed.
 
-8. **Article structure.** The venue requires IMRaD structure (introduction,
+6. **Article structure.** The venue requires IMRaD structure (introduction,
    methods, results, discussion) *if reporting original experimental research*.
    This paper is a methodology paper with a reference implementation, and it
    states plainly that it is at the collection stage with reproducibility and
