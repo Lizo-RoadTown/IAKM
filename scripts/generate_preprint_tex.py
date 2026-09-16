@@ -113,9 +113,9 @@ Locating Knowledge-Relevant Metadata in Modular Sociotechnical Systems}
 % Submitted as an independent researcher, not under an institutional
 % affiliation. The personal address is therefore the correct contact.
 \address{%
-$^{1}$ \quad Independent Researcher, Pomona, CA, USA; eosborn@cpp.edu}
+$^{1}$ \quad Independent Researcher, Pomona, CA, USA; lizocontactinfo@gmail.com}
 
-\corres{Correspondence: eosborn@cpp.edu}
+\corres{Correspondence: lizocontactinfo@gmail.com}
 
 \abstract{ABSTRACT_HERE}
 

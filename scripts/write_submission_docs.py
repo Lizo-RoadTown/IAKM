@@ -122,7 +122,7 @@ Extracted from the manuscript source, so they match it exactly.
 
 Elizabeth Osborn
 Independent Researcher, Pomona, CA, USA
-eosborn@cpp.edu
+lizocontactinfo@gmail.com
 ORCID 0009-0007-8678-3307
 
 -- ABSTRACT ({len(abstract.split())} words) {"-" * 42}
